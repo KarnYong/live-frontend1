@@ -16,5 +16,8 @@ COPY . .
 # Build the app inside the container
 RUN npm run build
 
+# Expose port 5555 for the app to listen on
+EXPOSE 5555
+
 # Set the command to start the app when the container is run
 CMD ["npx", "serve", "dist"]
