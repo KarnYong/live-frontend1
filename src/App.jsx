@@ -6,7 +6,7 @@ function App() {
   const [users, setUsers] = useState([]);
 
   useEffect(() => {
-    axios.get('http://13.212.221.19:5000/users')
+    axios.get('http://54.255.130.213:5000/users')
       .then(response => setUsers(response.data))
       .catch(error => console.log(error));
   }, []);
